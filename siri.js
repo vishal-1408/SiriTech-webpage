@@ -60,7 +60,7 @@ $.each($animate3,function(){
   if($elem_top<=$window_bot && $elem_bot>=$window_top){
     $elem.addClass("slideleft");
     console.log("class added");
-    $animate4.delay(3600).fadeIn(1000);
+    $animate4.delay(4000).fadeIn(1400);
   }
 })
 
