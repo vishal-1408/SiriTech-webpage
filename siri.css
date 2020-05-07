@@ -1,8 +1,10 @@
 .container-fluid{
   display:none;
-  position:absolute;
+  position: fixed;
+  z-index: 2;
   background: orange;
   box-shadow:0px 2px 5px black;
+
 }
 
 .fa-caret-down{
@@ -43,24 +45,26 @@
 }
 
 #cont-2{
-  height: 250px;
+
    margin:50px;
    text-align:center;
-   font-size:20px;
+   font-size:15px;
+   padding:4% 1%;
 }
 
 
 #cont-2 .lot{
   float:left;
   width:25%;
+
 }
 
 .num{
-  font-size:2.0em;
+  font-size:1.6em;
 }
 
 .plus{
-  font-size: 0.7em;
+  font-size:0.8em;
 }
 
 #two{
@@ -95,9 +99,7 @@
 }
 
 
-#textinfra{
-  float:left;
-  width:49%;
+.textinfra{
   text-align: center;
   height:100%;
   box-sizing: border-box;
@@ -105,21 +107,25 @@
   padding-bottom: 200px;
   font-size: 2.5em;
   border:1px solid orange;
+  background: orange;
 }
 
-#imp{
-  padding-left: 800px;;
+.imp{
+  float:left;
+  padding-left: 60px;
   height:100%;
+  width:0%;
   box-sizing: border-box;
-  padding-top: 110px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 140px;;
   padding-right:40px;
   font-size: 0.7em;
   line-height: 40px;
   letter-spacing: 1px;
   word-spacing: 3px;
   border:1px solid red;
-
+  background:white;
+  width:49%;
 
 }
 
@@ -148,7 +154,8 @@
   background-color:red;
   transition: 1s linear;
   transition-delay: 0.5s;
-  position:absolute;
+  position:relative;
+  z-index=1;
   height:400px;
 
 
@@ -189,6 +196,7 @@
 #client{
    font-size: 2.0em;
    text-align: center;
+
 }
 
 .le{
@@ -284,9 +292,79 @@ body{
 }
 
 #hov, #hoe{
-  height:200px;
+  height:250px;
+  font-size:20px;
 }
 
 #hoe{
   padding-top: 0px;
+}
+
+#hov h1{
+  font-size:25px;
+  text-align :center;
+  margin:15px;
+  font-size: 1em;
+}
+#hov ul{
+   list-style-type: square;
+   border :1px solid red;
+   height:100%;
+   box-sizing: border-box;
+   margin-bottom:15px;
+
+
+}
+
+.pressbreak li{
+  margin-left:100px;
+  line-height: 32px;
+  font-size: 0.8em;
+  display:none;
+
+
+}
+
+.la li{
+  margin-left:75px;
+  line-height: 32px;
+  font-size: 0.8em;
+  display:none;
+}
+.others li{
+  margin-left:160px;
+  line-height: 32px;
+  font-size: 0.8em;
+  display:none;
+}
+
+.nav-item{
+  margin: 0 30px;
+  font-size:18px;
+  box-sizing: border-box;
+}
+
+.lobt{
+  margin-left:0;
+}
+#lu{
+  margin-right:0;
+}
+
+.lobt span:hover #lu{
+  color:black;
+}
+
+.navbar-brand{
+  margin-left: 40px;
+  margin-right: 70px;
+}
+
+#hi {
+position: relative;
+  position: 10px 0 ;
+}
+
+ul.navbar-nav{
+  width:100%;
 }

@@ -1,11 +1,30 @@
 AOS.init();
 
 $(".hii").click(function(a){
-  console.log("hi");
-  $(".container-fluid").slideToggle(500)
+  $(".container-fluid").slideToggle(500,function(){
+    $("#vi").fadeToggle(300,function(){
+       $("#vis").fadeToggle(300,function(){
+           $("#vish").fadeToggle(300,function(){
+               $("#visha").fadeToggle(300);
+           });
+       });
+    });
+    $("#zo").fadeToggle(300,function(){
+       $("#zoe").fadeToggle(300)
+    })
+    $("#to").fadeToggle(300,function(){
+       $("#tom").fadeToggle(300,function(){
+          $("#tomm").fadeToggle(300,function(){
+             $("#tommy").fadeToggle(300);
+           });
+       });
+    });
 
 
+  })
 })
+
+
  var $animate1= $("#cont-2 .numh");
   var $animate2= $("#cont-2 .texth");
  var $windows=$(window);
@@ -88,3 +107,29 @@ var $animate5= $("#cont-5");
      $animate6.slideUp(500);
   }
 })
+
+ // $window=$(window);
+ // $animate7=$(".textinfra");
+ // $animate8=$(".imp");
+ //
+ // $window.on("scroll",function(){
+ //   $window_top=$window.scrollTop();
+ //   $window_ht=$window.height();
+ //   $window_bt=($window_ht+$window_top);
+ //
+ //   $animate7_tp=$animate7.offset().top;
+ //   $animate7_ht=$animate7.outerHeight();
+ //   $animate7_bt=($animate7_ht+$animate7_tp);
+ //   if($animate7_bt>=$window_top && $animate7_tp<=$window_bt){
+ //      $animate8.fadeIn(1000);
+ //      console.log("fdsfsd");
+ //      $animate7.addClass("right");
+ //
+ //
+ //   }
+ //
+ //   if($animate7_bt<$window_top ||  $animate7_tp>$window_bt){
+ //     console.log("omg")
+ //   }
+ //
+ // })

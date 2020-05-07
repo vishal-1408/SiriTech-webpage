@@ -15,12 +15,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-light navbar-light ">
-    <a href="#" class="navbar-brand">SIRI</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <a class="navbar-brand" href="#">SIRI</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -28,7 +28,7 @@
         <li class="nav-item " id="lu">
           <a class="nav-link li"  href="#" id="li">Equipments </a>
         </li>
-        <li class="nav-item" >
+        <li class="nav-item lobt" >
            <span class="nav-link hii" id="u"><i class="fa fa-caret-down"></i></span>
         </li>
         <li class="nav-item">
@@ -37,7 +37,7 @@
         <li class="nav-item">
           <a href="#" class="nav-link">Contact Us</a>
         </li>
-        <li class="nav-item hi">
+        <li class="nav-item" id="hi">
           <a href="#" class="nav-link"> Request a Quote</a>
         </li>
   </nav>
@@ -47,24 +47,27 @@
     <div class="row" id="hov">
       <div class="col-md-4">
         <ul class="pressbreak">
-          <li>CNC Hydraulic Press Brake</li>
-          <li>CNC Hydraulic Press Brake</li>
-          <li>NC Hydraulic Press Brake</li>
-          <li>CNC Turret Punching Machine</li>
+          <h1>Press Brake Machines</h1>
+          <li id="vi">CNC Hydraulic Press Brake Machine</li>
+          <li id="vis">CNC Hydraulic Press Brake Machine</li>
+          <li id="vish">NC Hydraulic Press Brake Machine</li>
+          <li id="visha">CNC Turret Punching Machine</li>
         </ul>
       </div>
       <div class="col-md-4" id="hoe">
-        <ul >
-          <li>Fiber CNC Laser Cutting Machine 2KW</li>
-          <li>CO2 CNC Laser Cutting Machine 2KW</li>
+        <ul class="la">
+          <h1>Laser Machines</h1>
+          <li id="zo">Fiber CNC Laser Cutting Machine 2KW</li>
+          <li id="zoe">CO2 CNC Laser Cutting Machine 2KW</li>
         </ul>
       </div>
       <div class="col-md-4">
         <ul class="others">
-          <li>Welding machines</li>
-          <li>Grit Blasting Facility</li>
-          <li>In house Painting and Powder Coating facility</li>
-          <li>Shearing Machines</li>
+          <h1>others</h1>
+          <li id="to">Grit Blasting Facility</li>
+          <li id="tom">Welding machines</li>
+          <li id="tomm">Painting and Powder Coating facility</li>
+          <li id="tommy" >Shearing Machines</li>
         </ul>
       </div>
 
@@ -96,8 +99,7 @@
   </div>
 
     <div id="infra">
-      <div id="textinfra">INFRASTRUCTURE</div>
-      <div id="imp">
+      <div class="imp">
         Since 2000, Siri Technologies is trying to build its infrastructure according the needs of the market.
         It always strived to be well equipped with all the modern facilities. The company has
         <ul>
@@ -113,6 +115,8 @@
         </ul>
         <button id="gall">Gallery</button>
       </div>
+      <div class="textinfra">INFRASTRUCTURE</div>
+
     </div>
     <div id="cont-3">
       <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
@@ -220,7 +224,7 @@
     <h1>Request a Quote</h1>
     <h6>Fill your details to get a call back immediately</h6>
     <form action="">
-      <span id="x"><label for="fn" class="hi">First Name: </label>
+      <span id="x" ><label for="fn" class="hi">First Name: </label>
       <input id="fn" type="Text" placeholder="John" required></span>
     <span id="y">  <label for="ln">Last Name:</label>
       <input type="Text" placeholder="Smith" required></span>
