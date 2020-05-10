@@ -1,7 +1,7 @@
 AOS.init();
 
 $(".hii").click(function(a){
-  $(".container-fluid").slideToggle(500,function(){
+  $(".lopster").slideToggle(500,function(){
     $("#vi").fadeToggle(300,function(){
        $("#vis").fadeToggle(300,function(){
            $("#vish").fadeToggle(300,function(){
@@ -78,7 +78,7 @@ $.each($animate3,function(){
 
   if($elem_top<=$window_bot && $elem_bot>=$window_top){
     $elem.addClass("slideleft");
-    $animate4.delay(1500).fadeIn(1400);
+    $animate4.delay(2000).fadeIn(1400);
   }
   if($elem_top>$window_bot || $elem_bot<$window_top){
     $elem.removeClass("slideleft");
@@ -86,7 +86,7 @@ $.each($animate3,function(){
   }
 })
 })
-
+/*
 var $animate5= $("#cont-5");
  var $animate6= $(".clientimgs");
 
@@ -101,35 +101,40 @@ var $animate5= $("#cont-5");
   $elem_bot=($elem_ht+$elem_top);
 
   if($elem_top<=$window_bot && $elem_bot>=$window_top){
-     $animate6.slideDown(1500);
+     $animate6.fadeIn(1500);
   }
   if($elem_top>$window_bot || $elem_bot<$window_top){
-     $animate6.slideUp(500);
+     $animate6.fadeOut(500);
   }
-})
+})*/
 
- // $window=$(window);
- // $animate7=$(".textinfra");
- // $animate8=$(".imp");
- //
- // $window.on("scroll",function(){
- //   $window_top=$window.scrollTop();
- //   $window_ht=$window.height();
- //   $window_bt=($window_ht+$window_top);
- //
- //   $animate7_tp=$animate7.offset().top;
- //   $animate7_ht=$animate7.outerHeight();
- //   $animate7_bt=($animate7_ht+$animate7_tp);
- //   if($animate7_bt>=$window_top && $animate7_tp<=$window_bt){
- //      $animate8.fadeIn(1000);
- //      console.log("fdsfsd");
- //      $animate7.addClass("right");
- //
- //
- //   }
- //
- //   if($animate7_bt<$window_top ||  $animate7_tp>$window_bt){
- //     console.log("omg")
- //   }
- //
- // })
+ $window=$(window);
+ $animate7=$(".textinfra");
+ $animate8=$(".imp");
+
+ $window.on("scroll",function(){
+   $window_top=$window.scrollTop();
+   $window_ht=$window.height();
+   $window_bt=($window_ht+$window_top);
+
+   $animate7_tp=$animate7.offset().top;
+   $animate7_ht=$animate7.outerHeight();
+   $animate7_bt=($animate7_ht+$animate7_tp);
+   if($animate7_bt>=$window_top && $animate7_tp<=$window_bt){
+        $animate7.addClass("slideleft");
+      $animate8.delay(2300).fadeIn(1400);
+      console.log("fdsfsd");
+
+
+   }
+
+   if($animate7_bt<$window_top ||  $animate7_tp>$window_bt){
+     $animate7.removeClass("slideleft");
+     $animate8.css("display","none");
+   }
+
+ })
+
+ $("input[type=\"email\"]").click(function(){
+   $(".tar").slideDown(1000);
+ })
