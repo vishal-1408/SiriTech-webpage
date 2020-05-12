@@ -1,0 +1,53 @@
+@media only screen and (max-width:768px)
+{
+  .html{
+    font-size:2vw;
+    margin: 0 0;
+    }
+  body{
+    padding:0;
+    margin:0;
+  }
+ .jumbotron{
+  width:100%;
+  font-size:0.8em;
+  color:red;
+  height:auto;
+
+}
+
+#siri{
+  width:30%;
+  height:auto;
+  float:none;
+  margin-left:25%;
+  margin:1% 35% 1% 35%;
+}
+
+ #cont-2 .lot{
+   float:none;
+   width:100%;
+   padding:1% auto 1% auto;
+
+ }
+ .numh{
+   font-size: 2em;
+ }
+ .num{
+   font-size: 1.5em;
+ }
+ .texth{
+   font-size: 1.2em;
+ }
+ .textinfra{
+   float:none;
+   width:100%;
+   font-size:2em;
+ }
+ .imp{
+   display:block;
+   width:100%;
+   font-size: 1.5em;
+ }
+
+}
